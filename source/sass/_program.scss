@@ -1,6 +1,6 @@
 .program {
   list-style-type: none;
-  background-color:#F2F2F2;
+  background-color: #f2f2f2;
 
   .program__title {
     font-family: "Oswald", sans-serif;
@@ -11,14 +11,14 @@
     color: #000000;
 
     &--slim {
-      background-image: url(../img/program-icon-slim.svg);
+      background-image: url("../img/program-icon-slim.svg");
       background-position: left;
       background-repeat: no-repeat;
       background-size: 50px 53px;
     }
 
     &--pro {
-      background-image: url(../img/program-icon-pro.svg);
+      background-image: url("../img/program-icon-pro.svg");
       background-position: left;
       background-repeat: no-repeat;
       background-size: 50px 53px;
@@ -49,7 +49,7 @@
   .program__button::after {
     content: "";
     position: absolute;
-    background-image: url(../img/program-icon-arrow.svg);
+    background-image: url("../img/program-icon-arrow.svg");
     background-repeat: no-repeat;
     width: 24px;
     height: 12px;
