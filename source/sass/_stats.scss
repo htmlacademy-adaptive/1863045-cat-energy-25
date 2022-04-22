@@ -1,0 +1,55 @@
+.stats__wrapper {
+  width: 124px;
+  height: 56px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  padding: 14px 21px 17px 20px;
+  box-sizing: border-box;
+  margin: 0;
+
+  .stats__spent {
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .stats__receive {
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    width: 87px;
+    min-height: 24px;
+    position: absolute;
+    bottom: -14px;
+    left: 18px;
+    color: #444444;
+    background-color: #eaeaea;
+  }
+}
+
+.stats__price-wrapper {
+  text-align: center;
+
+  .stats__costs {
+    font-family: "Oswald", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #000000;
+    text-transform: uppercase;
+  }
+
+  .stats__price {
+    font-family: "Oswald", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #000000;
+    text-transform: uppercase;
+  }
+}

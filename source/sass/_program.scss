@@ -1,0 +1,57 @@
+.program {
+  list-style-type: none;
+  background-color: #f2f2f2;
+
+  .program__title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-style: none;
+    font-size: 24px;
+    line-height: 37px;
+    color: #000000;
+
+    &--slim {
+      background-image: url("../img/program-icon-slim.svg");
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: 50px 53px;
+    }
+
+    &--pro {
+      background-image: url("../img/program-icon-pro.svg");
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: 50px 53px;
+    }
+  }
+
+  .program__description {
+    font-family: "Arial", sans-serif;
+    color: #444444;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .program__button {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #000000;
+    position: relative;
+  }
+
+  .program__button::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/program-icon-arrow.svg");
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 12px;
+  }
+}
