@@ -1,0 +1,133 @@
+.stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stats__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
+}
+
+.stats__wrapper {
+  width: 124px;
+  height: 56px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  padding: 14px 21px 17px 20px;
+  box-sizing: border-box;
+  margin: 0 0 20px 0;
+}
+
+.stats__spent {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.stats__receive {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  width: 87px;
+  min-height: 24px;
+  position: absolute;
+  bottom: -14px;
+  left: 18px;
+  color: #444444;
+  background-color: #eaeaea;
+}
+
+.stats__costs {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.stats__price {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .stats__container {
+    width: 366px;
+    column-gap: 42px;
+  }
+
+  .stats__wrapper {
+    width: 162px;
+    height: 77px;
+    margin: 0;
+    padding: 15px 30px 25px 30px;
+  }
+
+  .stats__spent {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .stats__receive {
+    display: block;
+    min-width: 114px;
+    padding: 0 8px;
+    box-sizing: border-box;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .stats__price-wrapper {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+
+  .stats__costs {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .stats__price {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .stats {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .stats__container {
+    margin-bottom: 55px;
+  }
+
+  .stats__price-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 327px;
+  }
+}

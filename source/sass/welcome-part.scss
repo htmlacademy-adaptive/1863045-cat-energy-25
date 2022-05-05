@@ -1,0 +1,139 @@
+.welcome-part__wrapper {
+  width: 320px;
+  padding: 30px 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.welcome-part__wrapper::before {
+  content: "";
+  background-image: url("../img/welcome-part-background.png");
+  background-size: 320px 302px;
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 302px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.welcome-part__title {
+  margin: 0 0 25px 0;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.welcome-part__slogan {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 30px 0;
+}
+
+.welcome-part__button {
+  padding: 7px 40px 7px 40px;
+}
+
+
+@media (min-width: 768px) {
+  .welcome-part__wrapper {
+    width: 768px;
+    min-height: 900px;
+    padding: 0 30px;
+  }
+
+  .welcome-part__wrapper::before {
+    background-image: none;
+  }
+
+  .welcome-part__title {
+    line-height: 60px;
+    font-size: 60px;
+    color: #000000;
+    text-align: left;
+    width: 420px;
+    margin: 40px 0 40px 80px;
+  }
+
+  .welcome-part__slogan {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #000000;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 40px 0 50px 80px;
+  }
+
+  .welcome-part__product {
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+  }
+
+  .welcome-part__button {
+    padding: 17px 20px 17px 20px;
+    font-size: 20px;
+    line-height: 20px;
+    width: 244px;
+    margin-left: 80px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .welcome-part__wrapper {
+    width: 1440px;
+    min-height: 530px;
+    padding: 0 110px;
+  }
+
+  .welcome-part__wrapper::before {
+    background-image: url("../img/welcome-part-background.png");
+    background-size: 100% auto;
+    width: 720px;
+    height: 696px;
+    top: -210px;
+    right: -110px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .welcome-part__title {
+    line-height: 60px;
+    font-size: 60px;
+    color: #000000;
+    text-align: left;
+    margin: 40px 0 40px 80px;
+    width: 420px;
+  }
+
+  .welcome-part__slogan {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #000000;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 40px 0 50px 80px;
+  }
+
+  .welcome-part__product {
+    position: absolute;
+    right: 330px;
+    top: -80px;
+    width: 552px;
+    height: 499px;
+    z-index: 1;
+  }
+}
