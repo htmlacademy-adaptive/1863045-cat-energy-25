@@ -1,0 +1,27 @@
+.main-header {
+  background-color: #ffffff;
+}
+
+.main-header__wrapper {
+  margin: 0 auto;
+  width: 320px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .main-header__wrapper {
+    width: 768px;
+    padding: 24px 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-header__wrapper {
+    width: 1440px;
+    padding: 53px 110px;
+  }
+}

@@ -1,0 +1,54 @@
+.logo {
+  width: 190px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo__icon {
+  width: 33px;
+  height: 37px;
+}
+
+.logo__icon--mobile {
+  background-image: url("../img/logo-icon-mobile.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width: 174px;
+    height: 51px;
+  }
+
+  .logo__icon--tablet {
+    background-image: url("../img/logo-icon-tablet.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .logo__icon {
+    width: 60px;
+    height: 51px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .logo {
+    width: 202px;
+    height: 59px;
+  }
+
+  .logo__icon--desktop {
+    background-image: url("../img/logo-icon-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .logo__icon {
+    width: 70px;
+    height: 59px;
+  }
+}
