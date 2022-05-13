@@ -54,5 +54,9 @@
 
   .main-nav__link {
     color: #ffffff;
+
+    &--color-black {
+      color: #111111;
+    }
   }
 }

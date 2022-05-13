@@ -1,0 +1,49 @@
+.comment-group {
+  margin: 0;
+  padding: 37px 0 22px 0;
+  border: none;
+}
+
+.comment-group__title {
+  font-size: 24px;
+  line-height: 26px;
+  padding: 0;
+}
+
+.comment-group__comment {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  border: 1px solid #e7e7e7;
+  padding: 10px 12px;
+  width: 100%;
+  box-sizing: border-box;
+  appearance: none;
+  height: 150px;
+}
+
+@media (min-width: 768px) {
+  .comment-group {
+    padding: 76px 40px 65px 40px;
+  }
+
+  .comment-group__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .comment-group__comment {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 19px;
+    height: 174px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .comment-group {
+    padding: 76px 0 67px 0;
+  }
+}
