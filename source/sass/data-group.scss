@@ -1,0 +1,48 @@
+.data-group {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.data-group__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  row-gap: 13px;
+}
+
+.data-group__label {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 15px;
+}
+
+.data-group__text {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .data-group__list {
+    padding: 0 40px;
+    row-gap: 20px;
+  }
+
+  .data-group__text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .data-group__list {
+    padding: 0;
+    width: 569px;
+  }
+}

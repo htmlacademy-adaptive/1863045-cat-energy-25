@@ -1,40 +1,23 @@
-.form__group {
-  margin: 0;
-  padding: 0;
-  border: none;
+.form__data-wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 24px;
+  padding: 26px 0 26px 0;
 }
 
-.form__label {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  color: #444444;
-  text-transform: uppercase;
+@media (min-width: 768px) {
+  .form__data-wrapper {
+    row-gap: 72px;
+    padding: 53px 0 71px 0;
+  }
 }
 
-.form__title {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 26px;
-  color: #000000;
-}
-
-.form__radio-list {
-  margin: 0;
-  padding: 0;
-}
-
-.form__checkbox-list {
-  margin: 0;
-  padding: 0;
-}
-
-.form__notification {
-  font-family: "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  color: #000000;
+@media (min-width: 1440px) {
+  .form__data-wrapper {
+    row-gap: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 80px;
+    padding: 53px 0 69px 0;
+  }
 }
