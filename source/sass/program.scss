@@ -69,13 +69,24 @@
 .program__button::after {
   content: "";
   position: absolute;
-  background-image: url("../img/program-icon-arrow.svg");
+  background-image: url("../img/icon-arrow-hover.svg");
   background-repeat: no-repeat;
+  background-position: -8px;
+  background-size: 100% auto;
   left: 102px;
-  width: 24px;
+  width: 32px;
   height: 12px;
+  transition: 0.5s;
 }
 
+.program__button:hover::after {
+  background-position: 0;
+}
+
+.program__button:active,
+.program__button:active::after {
+  opacity: 0.3;
+}
 
 @media (min-width: 768px) {
   .program {

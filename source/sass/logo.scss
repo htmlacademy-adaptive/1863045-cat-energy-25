@@ -6,16 +6,18 @@
   justify-content: space-between;
 }
 
-.logo__icon {
-  width: 33px;
-  height: 37px;
+.logo:hover {
+  opacity: 0.8;
 }
 
-.logo__icon--mobile {
-  background-image: url("../img/logo-icon-mobile.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+.logo:active {
+  opacity: 0.6;
 }
+
+.logo__text {
+  fill: #111111;
+}
+
 
 @media (min-width: 768px) {
   .logo {
@@ -23,15 +25,13 @@
     height: 51px;
   }
 
-  .logo__icon--tablet {
-    background-image: url("../img/logo-icon-tablet.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
   .logo__icon {
     width: 60px;
     height: 51px;
+  }
+
+  .logo__text {
+    fill: #444444;
   }
 }
 
@@ -41,14 +41,13 @@
     height: 59px;
   }
 
-  .logo__icon--desktop {
-    background-image: url("../img/logo-icon-desktop.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
   .logo__icon {
     width: 70px;
     height: 59px;
+  }
+
+  .logo__text {
+    width: 118px;
+    height: 21px;
   }
 }

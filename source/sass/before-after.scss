@@ -21,6 +21,22 @@
 }
 
 @media (min-width: 768px) {
+  .before-after {
+    background-color: #ffffff;
+    position: relative;
+    z-index: 0;
+  }
+
+  .before-after::before {
+    content: "";
+    background-color: #eaeaea;
+    height: 462px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+  }
+
   .before-after__wrapper {
     width: 768px;
     padding: 0 30px;
@@ -44,6 +60,15 @@
     width: 1440px;
     padding: 0 110px;
     flex-direction: row;
+
+    .before-after__title {
+      margin-bottom: 146px;
+      margin-top: 0;
+    }
+  }
+
+  .before-after::before {
+    background-color: #f2f2f2;
   }
 
   .before-after__stats-wrapper {

@@ -1,7 +1,11 @@
 .main-nav__list {
   margin: 0;
   padding: 0;
-  display: none;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 65px;
+  z-index: 3;
 }
 
 .main-nav__item {
@@ -10,18 +14,81 @@
 }
 
 .main-nav__link {
+  display: block;
   font-family: "Oswald", sans-serif;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
   color: #000000;
+  background-color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+  padding: 22px 20px 24px 20px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.main-nav__item:first-child .main-nav__link {
+  border-top: 1px solid #e6e6e6;
+}
+
+.main-nav__toggle {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  background-color: #ffffff;
+  border: none;
+  z-index: 2;
+}
+
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0.5px;
+  left: 0;
+  width: 24px;
+  height: 1.5px;
+  background-color: #000000;
+  box-shadow: 0 9.75px 0 0 #000000, 0 19.5px 0 0 #000000;
+}
+
+@media (max-width: 767px) {
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+}
+
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 1.5px;
+    background-color: #000000;
+    top: 11px;
+    left: -0.5px;
+    margin: auto;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
 
 @media (min-width: 768px) {
   .main-nav__list {
     display: flex;
+    flex-direction: row;
+    position: relative;
+    left: auto;
+    top: auto;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 440px;
@@ -32,10 +99,36 @@
   }
 
   .main-nav__link {
+    padding: 0;
+    display: inline;
+    border: none;
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
     text-decoration: none;
+    position: relative;
+  }
+
+  .main-nav__link--active::before {
+    content: "";
+    position: absolute;
+    top: 34px;
+    left: 0;
+    height: 2px;
+    background-color: #68b738;
+    width: 100%;
+  }
+
+  .main-nav__link:hover {
+    opacity: 0.6;
+  }
+
+  .main-nav__link:active {
+    opacity: 0.3;
+  }
+
+  .main-nav__item:first-child .main-nav__link {
+    border-top: none;
   }
 }
 
@@ -54,9 +147,18 @@
 
   .main-nav__link {
     color: #ffffff;
+    background-color: transparent;
 
     &--color-black {
       color: #111111;
     }
+  }
+
+  .main-nav__link--active::before {
+    background-color: #ffffff;
+  }
+
+  .main-nav__link--color-black.main-nav__link--active::before {
+    background-color: #68b738;
   }
 }

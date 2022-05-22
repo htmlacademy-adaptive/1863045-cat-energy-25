@@ -99,6 +99,16 @@
 .product-card__button--show-more {
   background-color: #f2f2f2;
   color: #444444;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #f2f2f2;
+    color: #444444;
+    opacity: 0.3;
+  }
 }
 
 .product-card__plus-wrapper {
@@ -175,12 +185,17 @@
 
   .product-card__link {
     flex-grow: 1;
-    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-top: -70%;
   }
 
   .product-card__img {
-    position: absolute;
-    bottom: 0;
+    width: auto;
+    height: auto;
   }
 
   .product-card__link__title {

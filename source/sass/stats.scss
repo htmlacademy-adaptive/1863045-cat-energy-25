@@ -68,6 +68,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 80px;
   }
 
   .stats__container {
@@ -95,6 +96,7 @@
     bottom: -18px;
     left: 50%;
     transform: translateX(-50%);
+    background-color: #ffffff;
   }
 
   .stats__price-wrapper {
@@ -119,6 +121,7 @@
   .stats {
     flex-direction: column;
     align-items: start;
+    margin-bottom: 0;
   }
 
   .stats__container {
@@ -129,5 +132,9 @@
     flex-direction: row;
     justify-content: space-between;
     width: 327px;
+  }
+
+  .stats__receive {
+    background-color: #f2f2f2;
   }
 }

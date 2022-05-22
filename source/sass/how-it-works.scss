@@ -55,7 +55,7 @@
 @media (min-width: 768px) {
   .how-it-works__wrapper {
     width: 768px;
-    padding: 0 30px;
+    padding: 0 30px 47px 30px;
 
     .how-it-works__title {
       font-size: 60px;
@@ -70,6 +70,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 37px 153px;
+    counter-reset: program;
   }
 
   .how-it-works__item {
@@ -78,6 +79,7 @@
     box-sizing: border-box;
     position: relative;
     z-index: 1;
+    counter-increment: program;
 
     &--icon-leaf {
       background-image: url("../img/icon-leaf.svg");
@@ -115,47 +117,8 @@
     z-index: -1;
   }
 
-  .how-it-works__item--icon-leaf::before {
-    content: "1";
-    font-family: "Oswald", sans-serif;
-    font-size: 280px;
-    line-height: 280px;
-    font-weight: 400;
-    color: #f2f2f2;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -2;
-  }
-
-  .how-it-works__item--icon-tub::before {
-    content: "2";
-    font-family: "Oswald", sans-serif;
-    font-size: 280px;
-    line-height: 280px;
-    font-weight: 400;
-    color: #f2f2f2;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -2;
-  }
-
-  .how-it-works__item--icon-eat::before {
-    content: "3";
-    font-family: "Oswald", sans-serif;
-    font-size: 280px;
-    line-height: 280px;
-    font-weight: 400;
-    color: #f2f2f2;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -2;
-  }
-
-  .how-it-works__item--icon-alarm::before {
-    content: "4";
+  .how-it-works__item::before {
+    content: counter(program);
     font-family: "Oswald", sans-serif;
     font-size: 280px;
     line-height: 280px;
@@ -171,7 +134,7 @@
 @media (min-width: 1440px) {
   .how-it-works__wrapper {
     width: 1440px;
-    padding: 0 110px;
+    padding: 0 110px 26px 110px;
     box-sizing: border-box;
   }
 

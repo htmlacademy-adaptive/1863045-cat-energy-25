@@ -31,9 +31,10 @@
   }
 
   .products__list {
+    padding-top: 163px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px 60px;
+    gap: 141px 60px;
   }
 }
 
@@ -44,8 +45,9 @@
   }
 
   .products__list {
+    padding-top: 165px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 60px 80px;
+    gap: 144px 80px;
   }
 }
