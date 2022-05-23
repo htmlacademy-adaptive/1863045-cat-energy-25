@@ -11,6 +11,7 @@
   background-image: url("../img/welcome-part-background.png");
   background-size: 320px 302px;
   background-repeat: no-repeat;
+  background-color: #68b738;
   width: 320px;
   height: 302px;
   position: absolute;
@@ -51,6 +52,7 @@
 
   .welcome-part__wrapper::before {
     background-image: none;
+    background-color: #ffffff;
   }
 
   .welcome-part__title {
@@ -98,14 +100,21 @@
   }
 
   .welcome-part__wrapper::before {
-    background-image: url("../img/welcome-part-background.png");
-    background-size: 100% auto;
+    background-image: url("../img/welcome-part-background-desctop.jpg");
+    background-color: #68b738;
+    background-size: cover;
+    background-position-y: bottom;
+    background-position-x: left;
     width: 720px;
-    height: 696px;
-    top: -210px;
-    right: -110px;
+    height: 694px;
     position: absolute;
+    top: -210px;
+    right: 0;
     z-index: 1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/welcome-part-background-desctop@2x.jpg");
+    }
   }
 
   .welcome-part__title {
