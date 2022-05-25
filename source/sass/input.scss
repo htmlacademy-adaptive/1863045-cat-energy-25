@@ -5,7 +5,7 @@
   line-height: 18px;
   box-sizing: border-box;
   width: 100%;
-  padding: 13px 14px 15px 12px;
+  padding: 12px 14px 13px 12px;
   border: 1px solid #e7e7e7;
 
   &::placeholder {
@@ -63,7 +63,7 @@ input[type="number"] {
 
 @media (min-width: 768px) {
   .input {
-    padding: 10px 19px 12px 19px;
+    padding: 10px 19px 11px 19px;
     font-size: 20px;
     line-height: 30px;
 
@@ -73,11 +73,13 @@ input[type="number"] {
     }
 
     &--email {
-      background-position: 514px center;
+      background-position: 517px center;
+      padding-left: 25px;
     }
 
     &--phone {
-      background-position: 494px center;
+      background-position: 495px center;
+      padding-left: 18px;
     }
   }
 }
@@ -85,11 +87,13 @@ input[type="number"] {
 @media (min-width: 1440px) {
   .input {
     &--email {
-      background-position: 448px center;
+      background-position: 453.5px center;
+      padding-left: 23px;
     }
 
     &--phone {
-      background-position: 435px center;
+      background-position: 432px center;
+      padding-left: 15px;
     }
   }
 }

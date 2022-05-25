@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 21px;
 }
 
 .stats__container {
@@ -18,9 +19,9 @@
   text-align: center;
   position: relative;
   display: inline-block;
-  padding: 14px 21px 17px 20px;
+  padding: 13px 10px 18px 10px;
   box-sizing: border-box;
-  margin: 0 0 20px 0;
+  margin: 0 0 18px 0;
 }
 
 .stats__spent {
@@ -29,6 +30,7 @@
   line-height: 24px;
   font-weight: 400;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .stats__receive {
@@ -39,7 +41,7 @@
   min-height: 24px;
   position: absolute;
   bottom: -14px;
-  left: 18px;
+  left: 16px;
   color: #444444;
   background-color: #eaeaea;
 }
@@ -78,9 +80,9 @@
 
   .stats__wrapper {
     width: 162px;
-    height: 77px;
+    height: 71px;
     margin: 0;
-    padding: 15px 30px 25px 30px;
+    padding: 15px 10px 25px 10px;
   }
 
   .stats__spent {
@@ -90,7 +92,8 @@
 
   .stats__receive {
     display: block;
-    min-width: 114px;
+    min-width: 125px;
+    width: auto;
     padding: 0 8px;
     box-sizing: border-box;
     bottom: -18px;
@@ -99,11 +102,17 @@
     background-color: #ffffff;
   }
 
+  .stats__receive-br {
+    display: none;
+  }
+
   .stats__price-wrapper {
     margin: 0;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     text-align: right;
+    min-height: 47px;
   }
 
   .stats__costs {
@@ -125,13 +134,13 @@
   }
 
   .stats__container {
-    margin-bottom: 55px;
+    margin-bottom: 60px;
   }
 
   .stats__price-wrapper {
     flex-direction: row;
     justify-content: space-between;
-    width: 327px;
+    width: 326px;
   }
 
   .stats__receive {

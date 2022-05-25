@@ -50,7 +50,7 @@
   width: 24px;
   height: 1.5px;
   background-color: #000000;
-  box-shadow: 0 9.75px 0 0 #000000, 0 19.5px 0 0 #000000;
+  box-shadow: 0 9.75px 0 0 #000000, 0 18.25px 0 0 #000000;
 }
 
 @media (max-width: 767px) {
@@ -143,11 +143,17 @@
     position: absolute;
     z-index: 2;
     top: 20%;
+    width: 478px;
+  }
+
+  .main-nav__item:nth-child(2) {
+    margin-left: -16px;
   }
 
   .main-nav__link {
     color: #ffffff;
     background-color: transparent;
+    letter-spacing: 0.5px;
 
     &--color-black {
       color: #111111;

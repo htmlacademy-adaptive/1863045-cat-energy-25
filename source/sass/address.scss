@@ -14,18 +14,17 @@
 
 .address__wrapper {
   width: 320px;
-  padding: 26px 20px;
+  padding: 28px 20px 26px 20px;
   margin: 0 auto;
   box-sizing: border-box;
 }
 
 .address__container {
   display: flex;
-  justify-content: space-between;
-  align-items: start;
 }
 
 .address__text {
+  width: 139px;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -33,9 +32,11 @@
   color: #111111;
   text-transform: uppercase;
   margin: 0;
+  margin-right: 2px;
 }
 
 .address__navigation {
+  width: 139px;
   font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -47,7 +48,11 @@
 @media (min-width: 768px) {
   .address__wrapper {
     width: 768px;
-    padding: 56px 70px;
+    padding: 60px 70px;
+  }
+
+  .address__container {
+    justify-content: space-between;
   }
 
   .map {
@@ -56,12 +61,22 @@
   }
 
   .address__text {
+    font-size: 20px;
+    line-height: 26px;
     width: 171px;
   }
 
   .address__navigation {
+    margin-top: -2px;
     width: 159px;
     text-align: right;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .address__navigation span {
+    display: inline-block;
+    margin-top: 20px;
   }
 }
 
@@ -75,7 +90,7 @@
     box-sizing: border-box;
     width: 565px;
     min-height: 198px;
-    padding: 56px 80px;
+    padding: 58px 80px 54px 80px;
     position: absolute;
     top: 95px;
     background-color: #ffffff;

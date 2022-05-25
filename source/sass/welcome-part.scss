@@ -1,6 +1,6 @@
 .welcome-part__wrapper {
   width: 320px;
-  padding: 30px 20px;
+  padding: 29px 20px 0 20px;
   margin: 0 auto;
   box-sizing: border-box;
   position: relative;
@@ -21,7 +21,7 @@
 }
 
 .welcome-part__title {
-  margin: 0 0 25px 0;
+  margin: 0 0 24px 0;
   line-height: 36px;
   text-align: center;
   color: #ffffff;
@@ -39,14 +39,14 @@
 }
 
 .welcome-part__button {
-  padding: 7px 40px 7px 40px;
+  padding: 11px 40px 11px 40px;
 }
 
 
 @media (min-width: 768px) {
   .welcome-part__wrapper {
     width: 768px;
-    min-height: 900px;
+    min-height: 810px;
     padding: 0 30px;
   }
 
@@ -61,7 +61,7 @@
     color: #000000;
     text-align: left;
     width: 420px;
-    margin: 40px 0 40px 80px;
+    margin: 38px 0 40px 86px;
   }
 
   .welcome-part__slogan {
@@ -72,14 +72,12 @@
     color: #000000;
     text-align: left;
     text-transform: uppercase;
-    margin: 40px 0 50px 80px;
+    margin: 40px 0 50px 89px;
   }
 
   .welcome-part__product {
     position: absolute;
     top: 200px;
-    width: 100%;
-    height: auto;
     z-index: -1;
   }
 
@@ -88,7 +86,8 @@
     font-size: 20px;
     line-height: 20px;
     width: 244px;
-    margin-left: 80px;
+    margin-left: 89px;
+    letter-spacing: 0.3px;
   }
 }
 
@@ -106,9 +105,9 @@
     background-position-y: bottom;
     background-position-x: left;
     width: 720px;
-    height: 694px;
+    height: 696px;
     position: absolute;
-    top: -210px;
+    top: -228px;
     right: 0;
     z-index: 1;
 
@@ -122,7 +121,7 @@
     font-size: 60px;
     color: #000000;
     text-align: left;
-    margin: 40px 0 40px 80px;
+    margin: 54px 0 40px 80px;
     width: 420px;
   }
 
@@ -134,7 +133,7 @@
     color: #000000;
     text-align: left;
     text-transform: uppercase;
-    margin: 40px 0 50px 80px;
+    margin: 40px 0 52px 80px;
   }
 
   .welcome-part__product {
@@ -144,5 +143,9 @@
     width: 552px;
     height: 499px;
     z-index: 1;
+  }
+
+  .welcome-part__button {
+    margin-left: 80px;
   }
 }

@@ -1,7 +1,7 @@
 .programs__wrapper {
   box-sizing: border-box;
   width: 320px;
-  padding: 0 20px;
+  padding: 20px 20px;
   margin: 0 auto;
 }
 
@@ -11,7 +11,11 @@
 }
 
 .programs__item {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
+}
+
+.programs__item:last-child {
+  margin: 0;
 }
 
 @media (min-width: 768px) {
@@ -23,12 +27,16 @@
   .programs__item {
     margin-bottom: 30px;
   }
+
+  .programs__item:last-child {
+    margin: 0;
+  }
 }
 
 @media (min-width: 1440px) {
   .programs__wrapper {
     width: 1440px;
-    padding: 0 110px;
+    padding: 22px 110px 0 110px;
   }
 
   .programs__list {
