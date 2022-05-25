@@ -9,13 +9,13 @@
   margin: 0;
   padding: 0;
   display: grid;
-  row-gap: 13px;
+  row-gap: 14px;
 }
 
 .data-group__label {
   display: grid;
   grid-template-columns: auto 1fr;
-  column-gap: 15px;
+  column-gap: 16px;
 }
 
 .data-group__text {
@@ -44,5 +44,6 @@
   .data-group__list {
     padding: 0;
     width: 569px;
+    row-gap: 18.7px;
   }
 }

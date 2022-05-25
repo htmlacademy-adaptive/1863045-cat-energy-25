@@ -11,7 +11,7 @@
   font-size: 36px;
   line-height: 36px;
   color: #000000;
-  margin: 0 0 37px 0;
+  margin: 0 0 38px 0;
 }
 
 .form-content__description {
@@ -27,7 +27,7 @@
 @media (min-width: 768px) {
   .form-content__wrapper {
     width: 768px;
-    padding: 42px 30px 0 30px;
+    padding: 38px 30px 0 30px;
   }
 
   .form-content__title {
@@ -47,14 +47,15 @@
 @media (min-width: 1440px) {
   .form-content__wrapper {
     width: 1440px;
-    padding: 22px 110px 0 110px;
+    padding: 15px 110px 0 110px;
   }
 
   .form-content__title {
-    margin-left: 0;
+    margin-left: -1px;
+    margin-bottom: 57px;
   }
 
   .form-content__description {
-    margin-left: 0;
+    margin-left: 1px;
   }
 }

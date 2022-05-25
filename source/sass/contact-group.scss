@@ -8,7 +8,7 @@
   width: 187px;
   font-size: 24px;
   line-height: 26px;
-  padding: 0 23px;
+  padding: 0 13px 0 23px;
   margin-left: -23px;
   background-color: #ffffff;
 }
@@ -26,17 +26,17 @@
 
 .contact-group__list {
   margin: 0;
-  padding: 35px 0 23px 0;
+  padding: 35px 0 24px 0;
   list-style-type: none;
   display: grid;
   grid-template-rows: 1fr 1fr;
-  row-gap: 15px;
+  row-gap: 14px;
 }
 
 .contact-group__label {
   display: grid;
   grid-template-columns: auto 1fr;
-  column-gap: 15px;
+  column-gap: 12px;
   position: relative;
 }
 
@@ -52,11 +52,15 @@
 
 @media (min-width: 768px) {
   .contact-group__list {
-    padding: 65px 40px 76px 40px;
+    padding: 75px 40px 64px 39px;
     list-style-type: none;
     display: grid;
     grid-template-rows: 1fr 1fr;
     gap: 20px 0;
+  }
+
+  .contact-group__label {
+    column-gap: 17px;
   }
 
   .contact-group__title {
@@ -64,11 +68,11 @@
     line-height: 36px;
     padding: 0 41px;
     width: auto;
-    margin-left: 0.1px;
+    margin-left: -3px;
   }
 
-  .comment-group__title::before {
-    margin-top: 20px;
+  .contact-group__title::before {
+    margin-top: 22px;
   }
 
   .contact-group__text {
@@ -82,7 +86,7 @@
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     gap: 0 80px;
-    padding: 76px 0 69px 0;
+    padding: 75px 0 67px 0;
   }
 
   .contact-group__title {

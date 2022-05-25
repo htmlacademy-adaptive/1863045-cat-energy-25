@@ -9,7 +9,7 @@
     <script src="./js/icon_customImage.js" type="text/javascript"></script>
   </head>
   <body class="page__body">
-    <header class="main-header">
+    <header class="main-header page__header">
       <div class="main-header__wrapper">
         <a class="main-header__logo logo" href="index.html">
           <picture>
@@ -54,14 +54,14 @@
         </nav>
       </div>
     </header>
-    <main>
+    <main class="page__main">
       <section class="welcome-part">
         <div class="welcome-part__wrapper">
           <h1 class="welcome-part__title title">Функциональное питание для котов</h1>
           <p class="welcome-part__slogan">Занялся собой? Займись котом!</p>
           <picture>
-            <source media="(min-width: 768px)" srcset="./img/welcome-part-product-desktop.png 1x, ./img/welcome-part-product-desctop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="./img/welcome-part-product-tablet.png 1x, ./img/welcome-part-product-tablet@2x.png 2x">
+            <source media="(min-width: 1440px)" srcset="./img/welcome-part-product-desktop.png 1x, ./img/welcome-part-product-desctop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="./img/welcome-part-product-tablet.png 1x, ./img/welcome-part-product-tablet@2x.png 2x" width="709" height="609">
             <img class="welcome-part__product" src="./img/welcome-part-product-mobile.png" srcset="./img/welcome-part-product-mobile@2x.png 2x" width="280" height="270" alt="корм Cat-energy pro со вкусом курицы">
           </picture>
           <a class="welcome-part__button button" href="form.html">подобрать программу</a>
@@ -98,7 +98,7 @@
               <p class="how-it-works__decription">Замените один-два приема обычной еды на наше функциональное питание.</p>
             </li>
             <li class="how-it-works__item how-it-works__item--icon-alarm">
-              <p class="how-it-works__decription">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+              <p class="how-it-works__decription">Уже через месяц наслаждайтесь изменениями к лучшему <br class="how-it-works__decription-br"> вашего питомца!</p>
             </li>
           </ul>
         </div>
@@ -107,12 +107,12 @@
         <div class="before-after__wrapper">
           <div class="before-after__stats-wrapper">
             <h2 class="before-after__title title">Живой пример</h2>
-            <p class="before-after__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+            <p class="before-after__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и <br class="before-after__description-br"> по-прежнему спит по 16 часов в день. </p>
             <div class="stats">
               <div class="stats__container">
                 <p class="stats__wrapper">
                   <span class="stats__spent">5 кг</span>
-                  <span class="stats__receive">снижение веса</span>
+                  <span class="stats__receive">снижение <br class="stats__receive-br"> веса</span>
                 </p>
                 <p class="stats__wrapper">
                   <span class="stats__spent">60 дней</span>
@@ -131,7 +131,7 @@
                 <source media="(min-width: 768px)" srcset="./img/before-nojs-tablet.png 1x, ./img/before-nojs-tablet@2x.png 2x" width="591" height="511">
                 <img src="./img/before-nojs-mobile.png" srcset="./img/before-nojs-mobile@2x.png 2x" alt="Фотография котика до">
               </picture>
-              </div>
+            </div>
             <div class="slider__view slider__view--before">
               <picture>
                 <source media="(min-width: 768px)" srcset="./img/slide-before-cat-desktop.png 1x, ./img/slide-before-cat-desktop@2x.png 2x" width="592" height="511">
@@ -159,13 +159,13 @@
         </div>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer page__footer">
       <section class="main-footer__address address">
         <h2 class="visibility-hidden">Наш адресс</h2>
         <div class="address__wrapper">
           <div class="address__container">
-            <p class="address__text">приглашаем к сотрудничеству дилеров!</p>
-            <address class="address__navigation">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+            <p class="address__text">приглашаем <br> к сотрудничеству дилеров!</p>
+            <address class="address__navigation">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
           </div>
         </div>
         <div class="map" id="map"></div>
@@ -174,7 +174,7 @@
         <h2 class="visibility-hidden">Социальные сети</h2>
         <div class="footer-navigation__wrapper">
           <a class="footer-navigation__logo logo" href="#">
-            <svg class="logo__text" width="101" height="18" viewBox="0 0 101 18" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+            <svg class="logo__text" width="128" height="24" viewBox="0 0 101 18" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_37030_445)">
               <path d="M1.26449 16.5385C0.36955 15.2762 -0.0747041 13.7627 1.02073e-05 12.2308V5.84615C-0.108365 4.29774 0.308071 2.75746 1.18546 1.46154C2.05478 0.461538 3.39829 0 5.37403 0C7.34978 0 8.61425 0.461538 9.40455 1.30769C10.2626 2.37941 10.6846 3.72136 10.59 5.07692V6.61539H6.71754V4.84615C6.74881 4.32289 6.66808 3.799 6.48045 3.30769C6.38016 3.10938 6.2212 2.9448 6.02403 2.83513C5.82686 2.72547 5.60049 2.67572 5.37403 2.69231C4.82082 2.69231 4.42568 2.84615 4.26762 3.23077C4.08883 3.77733 4.00862 4.34988 4.03053 4.92308V13.1538C3.98879 13.71 4.0978 14.267 4.34665 14.7692C4.5047 15.1538 4.89985 15.3077 5.45306 15.3077C6.00627 15.3077 6.32239 15.1538 6.48045 14.7692C6.66013 14.2494 6.74049 13.7019 6.71754 13.1538V11.3077H10.59V12.8462C10.6704 14.2238 10.2508 15.5852 9.40455 16.6923C8.61425 17.6154 7.27075 18.0769 5.37403 18.0769C3.47732 18 2.05478 17.5385 1.26449 16.5385Z" fill="#111111"/>
               <path d="M15.2527 0.23077H19.7574L23.0767 17.7692H19.4413L18.8091 14.0769H16.2011L15.5689 17.7692H11.8545L15.2527 0.23077ZM18.493 11.7692L17.5446 4.92308L16.5962 11.7692H18.493Z" fill="#111111"/>

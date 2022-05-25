@@ -1,6 +1,6 @@
 .comment-group {
   margin: 0;
-  padding: 37px 0 22px 0;
+  padding: 38px 0 20px 0;
   border: none;
 }
 
@@ -30,7 +30,7 @@
   text-transform: uppercase;
   color: #444444;
   border: 1px solid #e7e7e7;
-  padding: 10px 12px;
+  padding: 10px 14px;
   width: 100%;
   box-sizing: border-box;
   appearance: none;
@@ -44,7 +44,7 @@
 
 @media (min-width: 768px) {
   .comment-group {
-    padding: 76px 40px 65px 40px;
+    padding: 76px 40px 61px 40px;
   }
 
   .comment-group__title {
@@ -55,7 +55,7 @@
   }
 
   .comment-group__title::before {
-    margin-top: 20px;
+    margin-top: 22px;
   }
 
   .comment-group__comment {
@@ -68,6 +68,6 @@
 
 @media (min-width: 1440px) {
   .comment-group {
-    padding: 76px 0 67px 0;
+    padding: 76px 0 63px 0;
   }
 }

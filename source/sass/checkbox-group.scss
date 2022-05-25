@@ -29,7 +29,7 @@
   list-style-type: none;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  row-gap: 13px;
+  row-gap: 12px;
 }
 
 .checkbox-group__label {
@@ -115,7 +115,7 @@
   }
 
   .checkbox-group__title::before {
-    margin-top: 21px;
+    margin-top: 22px;
   }
 
   .checkbox-group__list {
@@ -125,6 +125,7 @@
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     row-gap: 32px;
+    column-gap: 123px;
   }
 
   .checkbox-group__label {
@@ -148,7 +149,7 @@
 
   .checkbox-group__button {
     width: 282px;
-    padding: 13px;
+    padding: 16px;
     font-size: 20px;
     margin-bottom: 0;
     margin-right: 61px;
@@ -169,9 +170,16 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     padding: 57px 0 61px 0;
+    column-gap: 80px;
+  }
+
+  .checkbox-group__label {
+    padding-left: 59px;
+    height: 40px;
   }
 
   .checkbox-group__button {
     width: 568px;
+    margin-right: 82px;
   }
 }
