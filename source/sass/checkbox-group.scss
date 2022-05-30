@@ -35,7 +35,7 @@
 .checkbox-group__label {
   position: relative;
   padding-left: 46px;
-  height: 30px;
+  min-height: 30px;
   display: flex;
   align-items: center;
 }
@@ -57,7 +57,7 @@
 }
 
 .checkbox-group__label:hover .checkbox-group__text::before {
-  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='39' stroke='%23bababa'/%3E%3C/svg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='39' stroke='%23b4b4b4'/%3E%3C/svg%3E%0A");
 }
 
 .checkbox-group__label:active {
@@ -69,11 +69,11 @@
 }
 
 .checkbox-group__label:hover .checkbox-group__checkbox:checked + .checkbox-group__text::before {
-  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='39' stroke='%23bababa'/%3E%3Cpath d='M17 26.499L9.4 17.901L8 19.4848L17 29.6667L32 12.697L30.6 11L17 26.499Z' fill='%2368B738'/%3E%3C/svg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='39' stroke='%23b4b4b4'/%3E%3Cpath d='M17 26.499L9.4 17.901L8 19.4848L17 29.6667L32 12.697L30.6 11L17 26.499Z' fill='%2368B738'/%3E%3C/svg%3E%0A");
 }
 
 .checkbox-group__text {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #222222;
@@ -130,7 +130,7 @@
 
   .checkbox-group__label {
     padding-left: 59px;
-    height: 40px;
+    min-height: 40px;
   }
 
   .checkbox-group__text::before {
@@ -170,12 +170,12 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     padding: 57px 0 61px 0;
-    column-gap: 80px;
+    gap: 20px 80px;
   }
 
   .checkbox-group__label {
     padding-left: 59px;
-    height: 40px;
+    min-height: 40px;
   }
 
   .checkbox-group__button {

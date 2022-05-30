@@ -6,7 +6,7 @@
 }
 
 .products__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -25,20 +25,22 @@
   .products__wrapper {
     width: 768px;
     padding: 0 30px;
+    padding-top: 35px;
   }
 
   .products__title {
     font-size: 60px;
     line-height: 60px;
-    margin-top: 16px;
+    margin-top: 0;
     margin-bottom: 0;
   }
 
   .products__list {
-    padding-top: 163px;
+    padding-top: 92px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 141px 60px;
+    grid-template-rows: auto;
+    gap: 86px 60px;
   }
 }
 
@@ -52,6 +54,6 @@
     padding-top: 165px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 144px 80px;
+    gap: 63px 80px;
   }
 }

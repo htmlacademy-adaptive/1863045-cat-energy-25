@@ -6,6 +6,7 @@
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32.png">
+    <link rel="preload" href="./fonts/oswaldregular.woff2" as="font">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<7960b865-5e7d-4f43-8a94-10bb7f9acc60>" type="text/javascript"></script>
     <script src="./js/icon_customImage.js" type="text/javascript"></script>
   </head>
@@ -37,21 +38,23 @@
             </defs>
           </svg>
         </a>
-        <nav class="main-nav main-nav--closed">
+        <nav class="main-nav main-nav--opened main-nav--no-js">
           <button class="main-nav__toggle" type="button">
             <span class="visibility-hidden">Открыть</span>
           </button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--active">главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">каталог продукции</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">подбор программы</a>
-            </li>
-          </ul>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--active">главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="catalog.html">каталог продукции</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">подбор программы</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -61,6 +64,9 @@
           <h1 class="welcome-part__title title">Функциональное питание для котов</h1>
           <p class="welcome-part__slogan">Занялся собой? Займись котом!</p>
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="./img/welcome-part-product-desktop.webp 1x, ./img/welcome-part-product-desctop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/welcome-part-product-tablet.webp 1x, ./img/welcome-part-product-tablet@2x.webp 2x" width="709" height="609">
+            <source type="image/webp" srcset="./img/welcome-part-product-mobile.webp 1x, ./img/welcome-part-product-mobile@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="./img/welcome-part-product-desktop.png 1x, ./img/welcome-part-product-desctop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="./img/welcome-part-product-tablet.png 1x, ./img/welcome-part-product-tablet@2x.png 2x" width="709" height="609">
             <img class="welcome-part__product" src="./img/welcome-part-product-mobile.png" srcset="./img/welcome-part-product-mobile@2x.png 2x" width="280" height="270" alt="корм Cat-energy pro со вкусом курицы">
@@ -136,13 +142,13 @@
             <div class="slider__view slider__view--before">
               <picture>
                 <source media="(min-width: 768px)" srcset="./img/slide-before-cat-desktop.png 1x, ./img/slide-before-cat-desktop@2x.png 2x" width="592" height="511">
-                <img class="slider__img-before" src="./img/slide-before-cat.png" width="280px" height="232px" alt="Фотография котика до">
+                <img class="slider__img-before" src="./img/slide-before-cat.png" width="280" height="232" alt="Фотография котика до">
               </picture>
               </div>
             <div class="slider__view slider__view--after">
               <picture>
                 <source media="(min-width: 768px)" srcset="./img/slide-after-cat-desctop.png 1x, ./img/slide-after-cat-desctop@2x.png 2x" width="592" height="511">
-                <img class="slider__view-after" src="./img/slide-after-cat.png" width="280px" height="232px" alt="Фотография котика после">
+                <img class="slider__view-after" src="./img/slide-after-cat.png" width="280" height="232" alt="Фотография котика после">
               </picture>
             </div>
             <div class="slider__range-wrapper">
@@ -151,6 +157,7 @@
                   <div class="slider__range-bar">
                     <button class="slider__range-button">
                       <span class="slider__range-button-control"></span>
+                      <span class="visibility-hidden">ползунок слайдера</span>
                     </button>
                   </div>
               </div>
@@ -188,7 +195,7 @@
               <path d="M94.6776 11.6154L90.8052 0.307692H93.1761L95.9421 8.76923L98.6291 0.307692H101L97.1276 11.6154V17.7692H94.7567V11.6154H94.6776Z"/>
               </g>
               <defs>
-              <clipPath id="clip0_37030_445">
+              <clipPath>
               <rect width="101" height="18" fill="white"/>
               </clipPath>
               </defs>
@@ -223,7 +230,7 @@
               </li>
             </ul>
           </div>
-          <a class="footer-navigation__html-logo" href="#">
+          <a class="footer-navigation__html-logo" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="footer-navigation__html-text">HTML Academy</span>
             <svg width="27" height="34" viewBox="0 0 27 34" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"/>

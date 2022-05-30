@@ -10,7 +10,7 @@
 }
 
 .additional-product-card__subtitle {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -102,6 +102,7 @@
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 24px;
+    max-width: 350px;
   }
 
   .additional-product-card__wrapper-characteristic {
@@ -156,6 +157,7 @@
     font-size: 20px;
     line-height: 20px;
     margin: 0;
+    max-width: 300px;
   }
 
   .additional-product-card__wrapper-characteristic {
