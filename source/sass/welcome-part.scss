@@ -28,7 +28,7 @@
 }
 
 .welcome-part__slogan {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
@@ -65,7 +65,7 @@
   }
 
   .welcome-part__slogan {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     line-height: 20px;
     font-weight: 400;
@@ -95,7 +95,7 @@
   .welcome-part__wrapper {
     width: 1440px;
     min-height: 530px;
-    padding: 0 110px;
+    padding: 0 110px 60px 110px;
   }
 
   .welcome-part__wrapper::before {
@@ -122,11 +122,11 @@
     color: #000000;
     text-align: left;
     margin: 54px 0 40px 80px;
-    width: 420px;
+    width: 450px;
   }
 
   .welcome-part__slogan {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     line-height: 20px;
     font-weight: 400;
@@ -134,6 +134,7 @@
     text-align: left;
     text-transform: uppercase;
     margin: 40px 0 52px 80px;
+    width: 430px;
   }
 
   .welcome-part__product {

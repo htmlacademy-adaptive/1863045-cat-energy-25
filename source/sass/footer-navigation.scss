@@ -105,6 +105,12 @@
   .footer-navigation__social-wrapper {
     border-top: none;
   }
+
+  .footer-navigation__social-list {
+    width: auto;
+    max-width: 248px;
+    gap: 26px;
+  }
 }
 
 @media (min-width: 1440px) {

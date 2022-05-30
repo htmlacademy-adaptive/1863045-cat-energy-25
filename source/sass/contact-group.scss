@@ -41,7 +41,7 @@
 }
 
 .contact-group__text {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
@@ -85,7 +85,7 @@
   .contact-group__list {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
-    gap: 0 80px;
+    gap: 20px 80px;
     padding: 75px 0 67px 0;
   }
 
